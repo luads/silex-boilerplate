@@ -1,0 +1,9 @@
+{% block flash %}
+{% if flash is defined %}
+<div class="alert alert-{{ flash.type }}">
+	<button class="close" data-dismiss="alert">×</button>
+
+	{{ flash.message }}
+</div>
+{% endif %}
+{% endblock flash %}
